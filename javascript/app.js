@@ -12,9 +12,11 @@ function insertion_sort(numbers) {
 // Returns a single integer
 function factorial(number) {
 
-    //Write your code here
-
-    return -1;
+    if (base = 0) {
+        return 1;
+    }
+    return base * factorial (number - 1);
+    
 }
 
 // Param number: single integer
