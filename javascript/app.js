@@ -19,8 +19,16 @@ function insertion_sort(numbers) { // La funcion recibe un arreglo en el siguien
 
 // Param number: single integer
 // Returns a single integer
-function factorial(number) {
- 
+function factorial(number) { // Recibe un valor entero positivo
+    if (number < 0) // Si es valor es un numero negativo entonces devuelve un -1 para hacer saber al usuario que se ingreso un valor invalido
+        return -1; //  retorno de valor invalido 
+    else if (number == 0) // Si el valor es 0, por definicion se devuelve un 1 por que 0! es 1, pero tambien sirve para la recursividad dentro de factorial
+        return 1; // Devuelve el valor de 1 si es que el numero original es de 0 o si es la ultima iteracion de la funcion recursiva 
+    else { // Si el numero es un valor mayor a 1 se entra en la recursividad de la funcion 
+        return (number * factorial(number - 1)); // La recursividad funciona diciendo que el numero se multiplicara por la funcion - 1, y hasta que el numero dentro de la funcion no se vuelva 0 entonces se restara uno del valor del numero y se volver a multiplicar
+                                                 // Si el valor fuese 5, seria 5 * 5 - 1 * 5 - 1 - 1,5-1-1-1 * 5-1-1-1-1 * 0, claro que si se multiplica por 0 entonces el valor final seria 0, pero dentro del if si el valor es 0 hay un return de 1. 
+                                                 // Pero el valor no sera de 1, dado que este return esta dentro de la primera iteracion de la recursividad, entonces el valor seria 5*4*3*2*1*1 = 120
+    }
 }
 
 // Param number: single integer
