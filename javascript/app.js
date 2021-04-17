@@ -54,12 +54,8 @@ function fibonacci(number) { // Ingresa un numero entero positivo
 // Returns an integer value
 function evaluation(expression) {
 
-    var result = 0;
-    expression = expression.replace(/\s/g, '').match(/[+\-\*]?([0-9\.\s]+)/g) || [];
-    while(expression.length) {
-        result += parseFloat(expression.shift());
-    }
-    return result;
+    eval(expression); // No se como explicarlo, en javascript hay una funcion que se llama eval, esta funcion recibe un string y pues basicamente
+                      // hace todo el trabajo por ti y te devuelve el valor de la funcion aritmetica que introdujiste, no hay mucho mas que decir.
 }
 
 
