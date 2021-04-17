@@ -36,8 +36,9 @@ function factorial(number) { // Recibe un valor entero positivo
 function fibonacci(number) { // Ingresa un numero entero positivo 
     let a = 0, b = 1, nextTerm; // Se declaran los terminos 0 y 1 para poder comenzar la cadena de fibonacci
 
-    if (number == 0) { // Si se ingresa el valor 0 se imprime un teorico 0 que seria el valor 0 de fibonacci
-        return 0;
+    if (number < 2) { // Si se ingresa el valor 0 se imprime un teorico 0 que seria el valor 0 de fibonacci, pero hice un cambio para que si el numero que se ingresara fuera menor a 2 devuelve al mismo numero, eso es por que el valor de fib 0 es 0 y el de fib 1 es 1
+                      // tambien se podria implementar en un futuro un proof para que si te sale un numero negativo en esta parte del algoritmo te bota un error por que no hay fib de negativos
+        return number;
     }
     else {
         for (let i = 1; i < number; i++) { // el for comienza en 1 y no en 0 por que se genera una suma oculta de 0 y 1 al ser declarados, entonces si el numero que se ingresara fuese 1, entonces el nextTerm seria 1 y se imprimiria 1
