@@ -13,7 +13,7 @@
 - Rafael Ramirez (rafaelramirezq0)
 - Galo Jimenez (Galo1337)
 - Mateo Rodríguez (Potaetosak)
-- Renzo Gallegos (leonardo-gllegos)
+- Renzo Gallegos (leonardo-gallegos)
 
 ---
 
