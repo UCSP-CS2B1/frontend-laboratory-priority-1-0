@@ -54,8 +54,11 @@ function fibonacci(number) { // Ingresa un numero entero positivo
 // Returns an integer value
 function evaluation(expression) {
 
-    eval(expression); // No se como explicarlo, en javascript hay una funcion que se llama eval, esta funcion recibe un string y pues basicamente
-                      // hace todo el trabajo por ti y te devuelve el valor de la funcion aritmetica que introdujiste, no hay mucho mas que decir.
+    return parseInt(eval(expression)); // No se como explicarlo, en javascript hay una funcion que se llama eval, esta funcion recibe un string y pues basicamente
+                                       // hace todo el trabajo por ti y te devuelve el valor de la funcion aritmetica que introdujiste, no hay mucho mas que decir.
+                                       // Mentira, eval te duvuelve un string, por eso que es que tengo que usar parseInt para cambiarlo de tipo string a tipo entero, 
+                                       // Esto funciona por que los resultados van a ser numero enteros de por si y al ser estos digitos parseInt entiende que son numeros en base 10
+                                       // y puede hacer el cambio apropiado. 
 }
 
 
