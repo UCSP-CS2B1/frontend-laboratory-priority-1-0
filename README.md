@@ -10,7 +10,7 @@
 **Members:**
 
 - Sebastian Postigo (sebpost2)
-- Name and surname (Student ID)
+- Rafael Ramirez (rafaelramirezq0)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
