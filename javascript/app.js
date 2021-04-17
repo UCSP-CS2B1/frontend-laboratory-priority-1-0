@@ -40,7 +40,7 @@ function fibonacci(number) { // Ingresa un numero entero positivo
         return 0;
     }
     else {
-        for (let i = 1; i <= number; i++) { // el for comienza en 1 y no en 0 por que se genera una suma oculta de 0 y 1 al ser declarados, entonces si el numero que se ingresara fuese 1, entonces el nextTerm seria 1 y se imprimiria 1
+        for (let i = 1; i < number; i++) { // el for comienza en 1 y no en 0 por que se genera una suma oculta de 0 y 1 al ser declarados, entonces si el numero que se ingresara fuese 1, entonces el nextTerm seria 1 y se imprimiria 1
             nextTerm = a + b; // El termina n+1, o el next term es el resultado de los anteriores 2 terminos de la serie, en la primera iteracion son 0 y 1 pero luego el algoritmo los genera por si solos
             a = b; // El primer termino obtiene el valor del segundo termino
             b = nextTerm; // El segundo termino obtiene el valor del nextTerm, es importante recordar que cuando acaba una iteracion del algoritmo el valor de b tambien es la respuesta dado que la suma para el next term ocurre primero dentro del algoritmo
