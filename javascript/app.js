@@ -1,19 +1,17 @@
 // Param numbers: array of numbers
 // Returns a sorted array
 function insertion_sort(numbers) {
-
-  const numbers = arr => {
-  const len = arr.length;
-  for (let i = 0; i < len; i++) {
-    let temp = arr[i];
-    let j;
-
-    for (j = i - 1; j >= 0 && arr[j] > temp; j--) {
-      arr[j + 1] = arr[j];
-    }
-    arr[j + 1] = temp;
-  }
-  return arr;
+    let n = numbers.length;
+        for (let i = 1; i < n; i++) {
+            let current = numbers[i]; // Primer elemento de array original 
+            let j = i-1; // Ultimo elemento del arreglo nuevo (Arreglado valga la redundancia)
+            while ((j > -1) && (current < numbers[j])) { // Mientras el valor actual sea menor que i-1 entonces el while sigue tambien j debe ser mayor a -1
+                numbers[j+1] = numbers[j];
+                j--;
+            }
+            numbers[j+1] = current;
+        }
+    return numbers;
 }
 
 
