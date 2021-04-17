@@ -12,8 +12,8 @@
 - Sebastian Postigo (sebpost2)
 - Rafael Ramirez (rafaelramirezq0)
 - Galo Jimenez (Galo1337)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
+- Mateo Rodríguez (Potaetosak)
+- Renzo Gallegos (leonardo-gllegos)
 
 ---
 
