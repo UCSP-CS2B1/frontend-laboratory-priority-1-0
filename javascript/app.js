@@ -22,12 +22,14 @@ function factorial(number) {
 // Param number: single integer
 // Returns a single integer
 function fibonacci(number) {
-
+    
     let x = 0;
     let y = 1;
+    // Base case
     if (number == 0) {
         return number;
     }
+    // Not equal to zero
     for (let i = 1; i <= number; i++) {
         let sum = x + y;
         x = y;
