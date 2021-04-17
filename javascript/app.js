@@ -15,7 +15,6 @@ function insertion_sort(numbers) { // La funcion recibe un arreglo en el siguien
     }                              // Es importante recordar que el while revisar todo el arreglo "sorted" que se encuentra en la izquierda cada vez que se itera el while 
     return numbers;                // Devuelve el arreglo original ordenado de menor a mayor numero
 }
-}
 
 
 // Param number: single integer
