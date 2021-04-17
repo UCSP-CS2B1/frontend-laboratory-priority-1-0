@@ -23,9 +23,19 @@ function factorial(number) {
 // Returns a single integer
 function fibonacci(number) {
 
-    //Write your code here
+    let x = 0;
+    let y = 1;
+    if (number == 0) {
+        return number;
+    }
+    for (let i = 1; i <= number; i++) {
+        let sum = x + y;
+        x = y;
+        y = sum;
+    }
+    return y;
+    }
 
-    return -1
 }
 
 // Param expression: string containing a mathematical expression
