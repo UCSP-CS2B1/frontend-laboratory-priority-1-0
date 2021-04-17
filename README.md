@@ -9,7 +9,7 @@
 
 **Members:**
 
-- Name and surname (Student ID)
+- Sebastian Postigo (sebpost2)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
