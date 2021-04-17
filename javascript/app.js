@@ -43,7 +43,7 @@ function evaluation(expression) {
     return eval(expression);
     var result = 0;
     expression = expression.replace(/\s/g, '').match(/[+\-]?([0-9\.\s]+)/g) || [];
-    while(s.length) {
+    while(expression.length) {
         result += parseFloat(expression.shift());
     }
     return result;
