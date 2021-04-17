@@ -55,7 +55,7 @@ function fibonacci(number) { // Ingresa un numero entero positivo
 function evaluation(expression) {
 
     var result = 0;
-    expression = expression.replace(/\s/g, '').match(/[+\-]?([0-9\.\s]+)/g) || [];
+    expression = expression.replace(/\s/g, '').match(/[+\-\*]?([0-9\.\s]+)/g) || [];
     while(expression.length) {
         result += parseFloat(expression.shift());
     }
