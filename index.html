@@ -3,10 +3,167 @@
     <head>
         <meta charset="UTF-8">
         <title>Frontend Laboratory</title>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">   
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="javascript/scripts.js"> 
+        <script src="javascript/scripts.js"></script>
     </head>
-
     <body>
-        <h1>Good luck!</h1>
+        <nav id="topbar" class="topbar">
+            <div id="logo" class="logo">
+                <h4>Frontend Project</h4>
+            </div>
+        </nav>
+        <div id="btn" class="btn" onclick="openFunction()">
+            <span class="fa fa-fw fa-bars"></span>
+        </div>
+        <div id="closebtn" href="#" class="closebtn" onclick="closeFunction()">
+            <span class="fa fa-fw fa-bars"></span>
+        </div>
+        <nav id="sidebar" class="sidebar">
+            <ul>
+                <li></li>
+                <li></li>
+                <div class="tab">
+                    <li class="tablinks" onclick="openTab(event, 'Team')"><a href="#"><i class="fa fa-fw fa-users"></i> Team</a></li>
+                    <li class="tablinks" onclick="openTab(event, 'Algorithms')"><a href="#"><i class="fa fa-fw fa-code"></i> Algorithms</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <script type="text/javascript"> 
+            function openFunction() {
+                document.getElementById("sidebar").style.left="0px";
+                var left = document.getElementsByClassName("btn")[0];
+                left.style.setProperty("left", "calc(150px + 1vw + 15px)");
+                var closeleft = document.getElementsByClassName("closebtn")[0];
+                closeleft.style.setProperty("left", "calc(150px + 1vw + 15px)");
+                document.getElementsByTagName("body")[0].style.marginLeft = "calc(150px + 1vw)";
+                document.getElementById("topbar").style.marginLeft = "calc(150px + 1vw)";
+                document.getElementById("logo").style.marginLeft = "calc(-120px - 0.5vw)";
+                
+            }
+            function closeFunction() {
+                document.getElementById("sidebar").style.left="-260px";
+                document.getElementById("btn").style.left="15px";
+                document.getElementById("closebtn").style.left="-45px";
+                document.getElementsByTagName("body")[0].style.marginLeft = "0";
+                document.getElementById("topbar").style.marginLeft = "0";
+                document.getElementById("logo").style.marginLeft = "0";
+            }
+
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+        </script>
+        
+        <div id="Algorithms" class="tabcontent">
+            <div id="card_group" class="card_group">
+                <div class="card">
+                    <div class="container">
+                <h2><b>Insertion Sort</b></h2>
+                <form name="form1" method="post" action="javascript:validate1();">
+                    <label><b>Array of numbers</b></label><br>
+                    <input type="text" placeholder="5,1,2,10,-1" name="array" required/><br>
+                    <input type="submit" value="Insertion sort" >
+                    <p id="resultinsert"><b>-1,1,2,5,10</b></p>
+                </form>
+                </div>
+                </div>
+                <div class="card">
+                <div class="container">
+                <h2><b>Factorial</b></h2>
+                <form name="form2" method="post" action="javascript:validate2();">
+                    <label><b>Number (between 1 and 6):</b></label><br>
+                    <input type="text" placeholder="3" name="factor" required/><br>
+                    <input type="submit" value="Calculate Factorial">
+                    <p id="resultfactor"><b>6</b></p>
+                </form>
+                </div>
+                </div>
+                <div class="card">
+                <div class="container">
+                <h2><b>Fibonacci</b></h2>
+                <form name="form3" method="post" action="javascript:validate3();">
+                    <label><b>Choose a number:</b></label><br>
+                    <input type="text" placeholder="15" name="fibo" required/><br>
+                    <input type="submit" value="Calculate Fibonacci" />
+                    <p id="resultfibo"><b>610</b></p>
+                </form>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                <h2><b>Evaluation</b></h2>
+                <form name="form4" method="post" action="javascript:validate4();">
+                    <label><b>Write any mathematical expression</b></label><br>
+                    <input type="text" placeholder="2+3*5-1" name="math" required/><br>
+                    <input type="submit" value="Evaluate Expression" />
+                    <p id="resultmath"><b>16</b></p>
+                </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Team" class="tabcontent"></div>
+            <div class="card_group">
+                <div class="card">
+                    <img src="images/img_avatar2.png" alt="Avatar" style="width:30%">
+                    <div class="container">
+                        <b>Renzo Leonardo Gallegos Vilca</b> 
+                        <p class="job">The hardcore gamer<p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/img_avatar.png" alt="Avatar" style="width:30%">
+                    <div class="container">
+                        <b>Sebastian Gonzalo Postigo Avalos</b>
+                        <p class="job">The boss<p></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/img_avatar2.png" alt="Avatar" style="width:30%">
+                    <div class="container">
+                        <b>Rafael Alejandro Ramirez Quiroz</b>
+                        <p class="job">The drifter<p></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/img_avatar.png" alt="Avatar" style="width:30%">
+                    <div class="container">
+                        <b>Galo De Paula Jimenez Araujo</b>
+                        <p class="job">The JS developer<p></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/img_avatar2.png" alt="Avatar" style="width:30%">
+                    <div class="container">
+                        <b>Mateo Jose Rodríguez Chanamé</b>
+                        <p class="job">The joker<p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
