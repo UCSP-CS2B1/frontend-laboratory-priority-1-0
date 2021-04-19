@@ -138,7 +138,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
     if (tabName == "Team") {
         document.getElementById("sideTeam").style.color= "#000000";
-        document.getElementById("sideTeam").style.background= "#ecece3";
+        document.getElementById("sideTeam").style.background= "#e6e6e6";
         document.getElementById("sideTeam").style.fontWeight= "600";
         document.getElementById("sideAlgorithms").style.color= "#ffffff";
         document.getElementById("sideAlgorithms").style.background= "none";
@@ -146,7 +146,7 @@ function openTab(evt, tabName) {
     }
     else if (tabName == "Algorithms") {
         document.getElementById("sideAlgorithms").style.color= "#000000";
-        document.getElementById("sideAlgorithms").style.background= "#ecece3";
+        document.getElementById("sideAlgorithms").style.background= "#e6e6e6";
         document.getElementById("sideAlgorithms").style.fontWeight= "600";
         document.getElementById("sideTeam").style.color= "#ffffff";
         document.getElementById("sideTeam").style.background= "none";
