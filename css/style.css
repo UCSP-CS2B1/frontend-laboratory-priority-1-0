@@ -84,7 +84,7 @@ body {
 }
 
 .sidebar{
-    margin-top: calc(-15px - 0.7% - 70px - (5px - 0.15vw));
+    margin-top: calc(-15px - 0.7% - 70px - (4px - 0.13vw));
     position: fixed;
     width: calc(110px + 3vw);
     height: 200%;
