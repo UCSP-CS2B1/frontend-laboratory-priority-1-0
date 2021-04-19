@@ -2,11 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Frontend Laboratory</title>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link href="javascript/scripts.js"> 
@@ -19,15 +21,13 @@
             </div>
         </nav>
         <div id="btn" class="btn" onclick="openFunction()">
-            <span class="fa fa-fw fa-bars"></span>
+            <span class="material-icons" style="font-size: 30px;">menu</span>
         </div>
         <div id="closebtn" href="#" class="closebtn" onclick="closeFunction()">
-            <span class="fa fa-fw fa-bars"></span>
+            <span class="material-icons">menu</span>
         </div>
         <nav id="sidebar" class="sidebar">
             <ul>
-                <li></li>
-                <li></li>
                 <div class="tab">
                     <li class="tablinks" onclick="openTab(event, 'Team')" id="defaultOpen"><a id="sideTeam" href="#"><i class="fa fa-fw fa-users"></i> Team</a></li>
                     <li class="tablinks" onclick="openTab(event, 'Algorithms')" id="defaultClose"><a id="sideAlgorithms" href="#"><i class="fa fa-fw fa-code"></i> Algorithms</a></li>
