@@ -96,3 +96,60 @@ function validate4(){
 
     document.getElementById('resultmath').innerHTML = resultmath;
 }
+
+
+function openFunction() {
+
+    document.getElementById("sidebar").style.left="0px";
+    var left = document.getElementsByClassName("btn")[0];
+    left.style.setProperty("left", "calc(150px + 1vw + 15px)");
+    var closeleft = document.getElementsByClassName("closebtn")[0];
+    closeleft.style.setProperty("left", "calc(150px + 1vw + 15px)");
+    document.getElementsByTagName("body")[0].style.marginLeft = "calc(150px + 1vw)";
+    document.getElementById("topbar").style.marginLeft = "calc(150px + 1vw)";
+    document.getElementById("logo").style.marginLeft = "calc(-120px - 0.5vw)";
+    
+}
+function closeFunction() {
+    document.getElementById("sidebar").style.left="-260px";
+    document.getElementById("btn").style.left="15px";
+    document.getElementById("closebtn").style.left="-45px";
+    document.getElementsByTagName("body")[0].style.marginLeft = "0";
+    document.getElementById("topbar").style.marginLeft = "0";
+    document.getElementById("logo").style.marginLeft = "0";
+    document.getElementById("sideTeam").style.color= "#ffffff";
+    document.getElementById("sideTeam").style.background= "none";
+    document.getElementById("sideTeam").style.fontWeight= "400";
+    document.getElementById("sideAlgorithms").style.color= "#ffffff";
+    document.getElementById("sideAlgorithms").style.background= "none";
+    document.getElementById("sideAlgorithms").style.fontWeight= "400";
+}
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    if (tabName == "Team") {
+        document.getElementById("sideTeam").style.color= "#000000";
+        document.getElementById("sideTeam").style.background= "#ecece3";
+        document.getElementById("sideTeam").style.fontWeight= "600";
+        document.getElementById("sideAlgorithms").style.color= "#ffffff";
+        document.getElementById("sideAlgorithms").style.background= "none";
+        document.getElementById("sideAlgorithms").style.fontWeight= "400";
+    }
+    else if (tabName == "Algorithms") {
+        document.getElementById("sideAlgorithms").style.color= "#000000";
+        document.getElementById("sideAlgorithms").style.background= "#ecece3";
+        document.getElementById("sideAlgorithms").style.fontWeight= "600";
+        document.getElementById("sideTeam").style.color= "#ffffff";
+        document.getElementById("sideTeam").style.background= "none";
+        document.getElementById("sideTeam").style.fontWeight= "400";
+    }
+}
