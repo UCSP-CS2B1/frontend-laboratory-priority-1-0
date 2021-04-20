@@ -1,3 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-/*Place your style sheet content here, you already have Poppins font imported*/
+.tabcontent {
+    display: block;
+}
+
+.tabcontent#Algorithms {
+    display: none;
+}
+
+.tab {
+    overflow: hidden;
+}
+
+h2 {
+    font-size: calc(20px + 0.15vw);
+    text-align: left;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+img {
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+form {
+    font-size: calc(13px + 0.2vw);
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-top: calc(10px + 0.2vw);
+    font-weight: 600;
+}
+
+input {
+    margin-top: calc(3px + 0.4vw);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: calc(13px + 0.2vw);
+}
+
+body {
+    background-color: #e6e6e6;
+    margin-left: 0;
+}
+
+.btn{
+    position: fixed;
+    margin-top: calc(-10px - 0.7% - 63px);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.closebtn{
+    position: absolute;
+    margin-top: calc(-10px - 0.7% - 58px);
+    left: -45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.closebtn span{
+    color:transparent;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn span{
+    color: white;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.sidebar{
+    margin-top: calc(-15px - 0.7% - 70px - (4px - 0.13vw));
+    position: fixed;
+    width: calc(110px + 3vw);
+    height: 200%;
+    left: -250px;
+    background: #125a83;
+}
+
+.logo {
+    text-align: center;
+    font-size: calc(15px + 0.5vw);  
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.7px;
+    margin-top: calc(30px - (8px + 0.25vw));
+    margin-left: 0;
+}
+
+
+.topbar{
+    margin-top: calc(-70px - 15px - 0.7%);
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    background: dodgerblue;
+}
+
+nav ul {
+    padding-top: calc(15px + 0.7% + 56px);
+    width: 101%;
+}
+
+nav ul li{
+    text-align: left;
+    line-height: calc(45px + 0.17vw);
+}
+
+nav ul li a{
+    font-size: calc(11px + 0.15vw);
+    padding-left: 10%;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    letter-spacing: 0.7px;
+    word-spacing: 3px;
+    /*border-left: 3px solid transparent;*/
+}
+
+nav ul li a:hover{
+    background: #2c6485;
+    /*border-left-color: black;*/
+}
+
+nav ul li a:active{
+    color: #000000;
+    background: #ecece3;
+    /*border-left-color: black;*/
+    font-weight: 600;
+}
+
+
+input {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+    text-align: center;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: rgb(128, 2, 86);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.card_group{
+    display:grid;
+    list-style: none;
+    margin-top: calc(15px + 0.7% + 70px);
+    margin-left: calc(15px + 0.7%);
+    margin-right: calc(15px + 0.7%);
+    grid-gap: calc(15px + 0.7%);
+    grid-template-columns: repeat(auto-fill, minmax(calc(210px + 12%), 1fr));
+}
+
+.card {
+    transition: 0.3s;
+    border-radius: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    margin-top: -30px;
+    padding: 40px 40px;
+    font-size: calc(15px + 0.15vw);
+}
+
+.job {
+    margin-top: 10px;
+    font-size: calc(14px + 0.15vw);
+}

@@ -1,19 +1,23 @@
 ## Laboratory Activity
 
-**Grade** -
+**Grade** 19
 
-- (5pts) Layout
-- (5pts) CSS 
-- (5pts) Javascript methods
-- (5pts) Responsiveness
+- (4/5pts) Layout
+- (5/5pts) CSS 
+- (5/5pts) Javascript methods
+- (5/5pts) Responsiveness
+
+Awesome !!!!
+
+Commit 2dc0bb5c is the one graded.
 
 **Members:**
 
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
+- Sebastian Postigo (sebpost2)
+- Rafael Ramirez (rafaelramirezq0)
+- Galo Jimenez (Galo1337)
+- Mateo Rodríguez (Potaetosak)
+- Renzo Gallegos (leonardo-gallegos)
 
 ---
 
