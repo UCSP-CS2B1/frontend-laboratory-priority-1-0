@@ -1,11 +1,15 @@
 ## Laboratory Activity
 
-**Grade** -
+**Grade** 19
 
-- (5pts) Layout
-- (5pts) CSS 
-- (5pts) Javascript methods
-- (5pts) Responsiveness
+- (4/5pts) Layout
+- (5/5pts) CSS 
+- (5/5pts) Javascript methods
+- (5/5pts) Responsiveness
+
+Awesome !!!!
+
+Commit 2dc0bb5c is the one graded.
 
 **Members:**
 
